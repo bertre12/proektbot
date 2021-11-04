@@ -34,7 +34,8 @@ def get_text_messages(message):
     elif message.text == '/help':
         bot.send_message(message.from_user.id, 'Напиши Привет')
     else:
-        bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help.')
+        #bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help.')
+        bot.send_message(message.from_user.id, 'Напиши Привет или  /help для помощи')
 # Обработчик нажатий на кнопки
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(call):
